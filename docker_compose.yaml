@@ -18,7 +18,7 @@ services:
   backend-container:
     container_name: backend-container
     build:
-      context: ./backend-repo
+      context: ../backend-repo
       dockerfile: Dockerfile 
     ports:
       - "8080:8080"
@@ -31,7 +31,7 @@ services:
   frontend-container:
     container_name: frontend-container
     build:
-      context: ./frontend-repo
+      context: ../frontend-repo
       dockerfile: Dockerfile
     ports:
       -  "5000:5000"
